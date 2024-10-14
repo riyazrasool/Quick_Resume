@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personalized Resume Builder</title>
+    <meta name="description" content="Create a tailored resume in minutes!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/resume-icon.png" type="image/x-icon">
+    
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-bottom: 2px solid #eaeaea;
+        }
+
+        .navbar-brand-text {
+            font-size: 3em;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .navbar-link {
+            color: #007bff;
+            font-size: 2rem;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .navbar-link:hover {
+            color: #0056b3;
+        }
+
+        /* Header Section Styling */
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 60px 0;
+            background-color: #f4f4f9;
+        }
+
+        .section .section-left img,
+        .section .section-right img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .lg-title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .text {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .section-items {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        .section-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+        }
+
+        .section-item-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .section-item-icon {
+            font-size: 2.5rem;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .footer span {
+            color: #28a745;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .section-items {
+                flex-direction: column;
+            }
+
+            .navbar-links {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="brand-and-toggler">
+                    <a href="index.html" class="navbar-brand">
+                        <span class="navbar-brand-text">Quick<span>Resume</span></span>
+                    </a>
+                    <div class="navbar-links">
+                        <a href="#header" class="navbar-link">Home</a>
+                        <a href="#features" class="navbar-link">Benefits</a>
+                        <a href="#tools" class="navbar-link">Our Tools</a>
+                        <a href="#contact" class="navbar-link">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header bg-light" id="header">
+        <div class="container">
+            <div class="header-content text-center">
+                <h6 class="text-uppercase text-blue-dark fs-14 fw-6 ls-1">Create Professional Resumes Instantly</h6>
+                <h1 class="lg-title">Stand out with a tailored resume!</h1>
+                <p class="text-dark fs-18">Our resume builder offers customized templates designed to help you get noticed. Build your resume quickly and efficiently today.</p>
+                <a href="resume.html" class="btn btn-primary text-uppercase">Start Building</a>
+                <img src="assets/images/resume.png" alt="Resume Builder Image">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <div class="section" id="features">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-left">
+                    <img src="assets/images/features.png" alt="Features Image">
+                </div>
+                <div class="section-right text-center">
+                    <h2 class="lg-title">Why choose QuickResume?</h2>
+                    <p class="text">Our platform makes it easier than ever to create the perfect resume. Whether you are new to the workforce or looking for an upgrade, we have everything you need.</p>
+                    <div class="btn-group">
+                        <a href="resume.html" class="btn btn-primary text-uppercase">Create Now</a>
+                        <a href="#" class="btn btn-secondary text-uppercase">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="section bg-light" id="tools">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-items">
+                    <div class="section-item">
+                        <div class="section-item-icon">🖊️</div>
+                        <h5 class="section-item-title">Tailored Resume Templates</h5>
+                        <p class="text">Select from a wide range of templates that match your profession and style, ensuring you make the best first impression.</p>
+                    </div>
+
+                    <div class="section-item">
+                        <div class="section-item-icon">⚙️</div>
+                        <h5 class="section-item-title">Easy-to-Use Interface</h5>
+                        <p class="text">Our user-friendly interface allows you to create your resume without any technical skills. Simply drag and drop sections as needed.</p>
+                    </div>
+
+                    <div class="section-item">
+                        <div class="section-item-icon">👨‍💼</div>
+                        <h5 class="section-item-title">Expert Resume Review</h5>
+                        <p class="text">Get feedback from our team of experts to make sure your resume is optimized for applicant tracking systems and recruiters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark" id="contact">
+        <div class="container">
+            <div class="footer-content text-center">
+                <p class="fs-15">&copy; Copyright 2024. All Rights Reserved - <span>QuickResume</span></p>
+                <p class="fs-15">Powered by Resume Builders Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
